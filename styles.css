@@ -1,0 +1,572 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --classic-pad: 4vw;
+  --back-classic: #2b2d42;
+  --back-hover: #3a3c58;
+  --back-hover-lighter: hsl(236, 20%, 40%);
+  --nav-color: rgba(35, 30, 30, 0.925);
+  --section: linear-gradient(to bottom, rgb(34, 28, 28), #2b2d42);
+  --classic1: #55e2ba;
+  --classic-hover: #60fcd0;
+  --salute: #46d3d8;
+  --name: #55e2ba;
+  --career: #46d3d8;
+  --text: #46d3d8d7;
+  --light-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nope {
+  display: none;
+}
+
+/* ----------------------------------------------- */
+
+section {
+  background: var(--section);
+  width: 100%;
+}
+.nav-bar {
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  color: var(--classic1);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: var(--light-shadow);
+  z-index: 950;
+  transition: all 0.2s ease-in;
+}
+
+.fixed-nav ul li a {
+  color: var(--nav-color);
+}
+
+.fixed-nav .logo a {
+  color: var(--nav-color);
+}
+
+.fixed-nav .nav-toggle {
+  color: var(--nav-color);
+}
+
+.logo {
+  padding-left: var(--classic-pad);
+  font-size: 1.3rem;
+  width: 90%;
+}
+.logo a {
+  text-decoration: none;
+  color: var(--classic1);
+  display: flex;
+  align-content: center;
+}
+
+.items-list {
+  padding-left: var(--classic-pad);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.links-container {
+  height: 0px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.items-list li {
+  list-style: none;
+  width: 100%;
+  padding-top: 10px;
+}
+.items-list li a {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  text-decoration: none;
+  padding-right: 15px;
+  color: var(--classic1);
+}
+.items-list li a:hover {
+  color: var(--classic-hover);
+}
+.logo:hover {
+  color: var(--classic-hover);
+}
+
+.nav-toggle {
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding-right: 5vw;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: var(--name);
+}
+.nav-toggle:hover {
+  color: var(--career);
+}
+
+/* ----------------------------------------------- */
+
+.presentation {
+  width: 100%;
+  height: fit-content;
+}
+
+.cd1 {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  text-align: left;
+  font-size: 1.4rem;
+  padding: 10px var(--classic-pad) 50px var(--classic-pad);
+}
+.cd1 .hello {
+  color: var(--salute);
+  letter-spacing: 3px;
+  font-size: 1rem;
+  padding-left: 2px;
+}
+.cd1 .name {
+  letter-spacing: 1px;
+  font-size: 2.8rem;
+  color: var(--name);
+  text-shadow: 3px 3px 10px rgb(34, 34, 34);
+}
+.cd1 .electro {
+  font-weight: lighter;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+  color: var(--career);
+}
+.cd1 .software {
+  font-size: 2.1rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: var(--career);
+  padding-bottom: 10px;
+}
+
+.button {
+  width: 80%;
+  padding-top: 10px;
+  z-index: -1;
+}
+.button button {
+  background-color: var(--back-classic);
+  border: 1px solid var(--classic1);
+  font-size: 1.2rem;
+  padding: 18px;
+  border-radius: 10px;
+  color: var(--classic1);
+  letter-spacing: 2px;
+  font-weight: normal;
+  outline: none;
+}
+
+.button button:hover {
+  background-color: var(--back-hover);
+}
+
+.wave {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+div .w1 {
+  width: 100%;
+  height: 100%;
+  background: url("./img/wave.png");
+  background-size: 1000px 50px;
+  animation-name: animate;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* ---------------------------------------------- */
+
+.about {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  position: relative;
+  padding: 5vh var(--classic-pad) 5vh var(--classic-pad);
+}
+
+.description {
+  width: 100%;
+  text-align: left;
+  color: var(--back-classic);
+}
+
+.description .title {
+  letter-spacing: 1px;
+  font-size: 2.8rem;
+}
+.desc-container {
+  padding-right: 20px;
+  height: fit-content;
+  width: 100%;
+  font-size: 1rem;
+  text-align: justify;
+}
+.desc-container a {
+  text-decoration: none;
+  color: rgb(55, 55, 214);
+}
+.myself {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile {
+  padding: 20px 0px;
+  width: 70%;
+}
+.uni-container {
+  padding-right: 20px;
+  height: fit-content;
+  width: 100%;
+  font-size: 1rem;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.UTP {
+  padding-top: 5px;
+}
+
+.desc-container .tec {
+  padding-top: 5px;
+}
+.skills {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+
+.skills p {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.skills ul {
+  list-style: square;
+  font-size: 1rem;
+  color: var(--back-classic);
+}
+
+.custom-shape-divider-bottom-1614041195 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1614041195 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 23px;
+}
+
+.custom-shape-divider-bottom-1614041195 .shape-fill {
+  fill: var(--name);
+}
+
+/* --------------------------------------------- */
+
+.experience {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--name);
+  padding: 5vh var(--classic-pad) 5vh var(--classic-pad);
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.exp-title {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 5vh;
+}
+
+.exp-title h3 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 2.8rem;
+  color: var(--back-classic);
+}
+
+.experience-tab {
+  width: 80%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+}
+.tab-items {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--back-classic);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab-items ul {
+  list-style: none;
+}
+.tab-items ul a {
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.tab-content {
+  width: 100%;
+  height: fit-content;
+  padding: 20px var(--classic-pad) 30px var(--classic-pad);
+  color: var(--back-classic);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-items ul a:hover {
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: var(--classic1);
+}
+.tab-item h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+.tab-item h2 {
+  font-size: 1.3rem;
+}
+
+.tab-item ul {
+  padding-left: 20px;
+  font-size: 1rem;
+  color: var(--back-classic);
+  list-style: square;
+}
+
+/* ---------------------------------------------------------- */
+.contact {
+  background-color: var(--back-classic);
+  width: 100%;
+  height: fit-content;
+  padding: 5vh var(--classic-pad) 0px var(--classic-pad);
+}
+
+.contact h3 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 2.8rem;
+  color: var(--name);
+  padding-bottom: 5vh;
+}
+.contact p {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: var(--salute);
+}
+
+.send-email {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.send-email button {
+  border: 1px solid var(--classic1);
+  font-size: 1.2rem;
+  padding: 13px;
+  border-radius: 10px;
+  color: var(--name);
+  letter-spacing: 2px;
+  font-weight: normal;
+  background-color: var(--back-classic);
+}
+
+.send-email button:hover {
+  background-color: var(--back-hover);
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social div {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.social div a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.social div a img {
+  width: 3rem;
+}
+
+.copyright p {
+  font-size: 0.8rem;
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  padding: 0px 5px;
+  border-radius: 5px;
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+.show-on-dark {
+  background-color: var(--classic1);
+  color: var(--back-classic);
+}
+
+.show-on-light {
+  background-color: var(--back-classic);
+  color: white;
+  border: none;
+}
+
+/* ----------------------------------------------------------- */
+
+.modal-container {
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 1px 1px 1px black;
+
+  bottom: 0;
+
+  top: 25vh;
+  left: 25vw;
+
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  visibility: hidden;
+}
+.modal-container h2 {
+  color: var(--back-classic);
+  padding: 0px 15px;
+}
+.modal-container p {
+  width: 100%;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.send button {
+  background-color: var(--back-classic);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.send button:hover {
+  background-color: var(--classic1);
+  color: var(--back-hover);
+  border: 1.5px solid var(--classic1);
+}
+
+.close-form {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: var(--back-classic);
+  cursor: pointer;
+}
+
+.close-form i:hover {
+  color: red;
+}
+
+.show-form {
+  visibility: visible;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+/* ----------------------------------------------- */
