@@ -1,0 +1,213 @@
+@media (min-width: 400px) {
+  html {
+    font-size: 0.7rem;
+  }
+  .social div a img {
+    width: 3rem;
+  }
+}
+@media (min-width: 500px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .social div a img {
+    width: 4rem;
+  }
+  .profile img {
+    width: 50%;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 600px) {
+  .social div a img {
+    width: 5rem;
+  }
+  .modal-container {
+    left: 35vw;
+    padding: 50px 40px;
+  }
+}
+@media (min-width: 700px) {
+  html {
+    font-size: 1rem;
+  }
+  .social div a img {
+    width: 5rem;
+  }
+  .logo {
+    width: fit-content;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .items-list {
+    height: fit-content;
+  }
+  .items-list li {
+    width: fit-content;
+  }
+  .links-container {
+    height: fit-content !important;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: fit-content auto;
+  }
+  .experience {
+    min-height: fit-content;
+    padding: 5vh var(--classic-pad) 5vh var(--classic-pad);
+  }
+  .description .title {
+    width: 100%;
+  }
+
+  .desc-container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .uni-container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .myself {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .profile {
+    width: 100%;
+    height: fit-content;
+  }
+  .contact {
+    padding: 5vh var(--classic-pad) 5vh var(--classic-pad);
+  }
+}
+
+@media (min-width: 800px) {
+  .experience {
+    padding: 5vh var(--classic-pad) 10vh var(--classic-pad);
+  }
+
+  :root {
+    --classic-pad: 5vw;
+  }
+  .social div a img {
+    width: 5rem;
+  }
+
+  .experience-tab {
+    display: flex;
+  }
+
+  .tab-items {
+    width: 20%;
+    height: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .tab-content {
+    width: fit-content;
+  }
+
+  .items-list li a {
+    padding-right: 40px;
+  }
+
+  .profile {
+    width: 70%;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 1000px) {
+  .experience {
+    padding: 8vh var(--classic-pad) 15vh var(--classic-pad);
+  }
+  .contact {
+    padding: 15vh var(--classic-pad) 10vh var(--classic-pad);
+  }
+
+  .social div a img {
+    width: 5rem;
+  }
+
+  .desc-container p {
+    font-size: 1.1rem;
+  }
+  .myself {
+    align-items: flex-start;
+  }
+  .profile {
+    padding: 0px;
+    width: 80%;
+  }
+  .uni-container p {
+    font-size: 1.1rem;
+  }
+  .skills {
+    padding-top: 20px;
+    font-size: 1.1rem;
+  }
+  .profile {
+    width: 70%;
+    height: fit-content;
+  }
+}
+@media (min-width: 1200px) {
+  .social div a img {
+    width: 5rem;
+  }
+
+  .experience-tab {
+    display: flex;
+    width: 50%;
+  }
+  .tab-items {
+    width: 20%;
+    height: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .tab-content {
+    width: fit-content;
+    padding-bottom: 20px;
+  }
+  .profile {
+    padding: 0px;
+    width: 50%;
+  }
+  .cd1 {
+    padding-bottom: 20vh;
+  }
+  .about {
+    padding: 10vh var(--classic-pad) 20vh var(--classic-pad);
+  }
+  .experience {
+    padding: 10vh var(--classic-pad) 20vh var(--classic-pad);
+  }
+}
+
+@media (min-width: 1300px) {
+  .experience-tab {
+    display: flex;
+    width: 50%;
+  }
+  .tab-items {
+    width: 20%;
+    height: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .tab-content {
+    width: fit-content;
+    padding-bottom: 50px;
+  }
+}
